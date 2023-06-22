@@ -1,0 +1,297 @@
+*{
+    font-family: 'Comic Neue', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header{
+width: 100%;
+height: 450px;
+background-color: #DFE1E4;
+
+}
+
+.logo{
+    padding: 25px 0;
+}
+
+.logo img{
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.logo h1{
+    text-align: center;
+    font-size: 80px;
+    color: #7843E6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media all and (max-width:800px){
+    header{
+        height: 300px;
+            
+    }
+   
+    .logo h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .logo img{
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+  }
+
+/* Fin Encabezado */
+
+/* reglas */
+
+.reglas{
+  width: 100%;
+  background-color: #EDEBDC;
+  margin-top: 1px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.reglas h2{
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #FF0000;
+}
+
+.reglas h3{
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  color: #FF0000;
+}
+
+.reglas p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.reglas ul li{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.lista {
+  list-style-type: none; /* Quita los puntos por defecto */
+}
+
+.lista li::before {
+  content: "🔥 💧 🌱"; /* Puedes cambiar el símbolo de los puntos aquí */
+  margin-right: 5px; /* Espacio entre el punto y el texto */
+}
+
+/* fin reglas */
+
+/* centro - banner */
+
+.banner{
+    margin-top: 2px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-color: #DDA1CE;
+}
+
+/* titulo 2 */
+
+.banner h2{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color:#FF0000;
+}
+
+/* radio */
+
+.banner label {
+  /* Estilo básico para la etiqueta asociada al radio button */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.banner label input[type="radio"] {
+  /* Estilo para el radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-right: 10px;
+  outline: none;
+}
+
+.banner label input[type="radio"]::before {
+  /* Estilo para el círculo del radio button */
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #000;
+  visibility: hidden;
+}
+
+.banner label input[type="radio"]:checked::before {
+  /* Estilo para el círculo del radio button seleccionado */
+  visibility: visible;
+}
+
+  /* fin radio */
+  
+/* button */
+
+.banner .boton button{
+    margin-top: 20px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón cambiando los valores de padding */
+    font-size: 20px; /* Cambia el tamaño de la fuente del botón */
+    background-color: #FF0000; /* Cambia el color de fondo del botón */
+    color: #FFFFFF; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer;
+}
+
+.banner .boton button:hover {
+    background-color: #FF5555; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+  }
+
+.banner .boton button:disabled {
+  background-color: gray; /* Cambia el color de fondo de los botones deshabilitados */
+  color: gray; /* Cambia el color del texto de los botones deshabilitados */
+}
+
+/* fin centro - banner */
+
+/*Ataque*/
+
+.ataque{
+    width: 100%;
+    background-color: #EDEBDC;
+    margin-top: 1px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.ataque h2{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FF0000;
+}
+
+.ataque p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ataque .batalla button{
+    margin-top: 20px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón cambiando los valores de padding */
+    font-size: 20px; /* Cambia el tamaño de la fuente del botón */
+    background-color: #0c3f3c; /* Cambia el color de fondo del botón */
+    color: #FFFFFF; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer;
+}
+
+.ataque .batalla button:disabled {
+  background-color: gray; /* Cambia el color de fondo de los botones deshabilitados */
+  color: gray; /* Cambia el color del texto de los botones deshabilitados */
+}
+
+.ataque .batalla button:enabled {
+  background-color: #af54c5; /* Cambia el color de fondo de los botones habilitados al pasar el cursor sobre ellos */
+}
+
+.ataque .batalla button:hover {
+    background-color: #603a69; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+  }
+
+
+/* Fin ataque*/
+
+/* Mensaje */
+
+.mensaje{
+    width: 100%;
+    background-color: #DDA1CE;
+    margin-top: 1px;
+    padding: 50px;
+    text-align: center; 
+    font-size: 30px;
+}
+
+/* Fin mensaje */
+
+/* Reinicio */
+
+.reinicio{
+    width: 100%;
+    background-color: #DFE1E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 1px;
+}
+
+.reinicio button{
+    margin-top: 20px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón cambiando los valores de padding */
+    font-size: 20px; /* Cambia el tamaño de la fuente del botón */
+    background-color: #f3cb19; /* Cambia el color de fondo del botón */
+    color: #FFFFFF; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer;
+}
+
+.reinicio button:hover {
+    background-color: #6dda14a1; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+  }
+
+/* Fin reinicio */
+
+/* pie de pagina */
+
+
+.bottom-footer p{
+    width: 100%;
+    text-align: center;
+    color: rgb(128, 28, 28);
+    font-size: 15px;
+    background-color: #c5c5c7;
+  }
+
+/* Fin pie de pagina */
+
+/* Span */
+
+span{
+  color:#e2740d;
+  font-size: 25px;
+  text-transform: uppercase; 
+}
+
+/* Fin span */

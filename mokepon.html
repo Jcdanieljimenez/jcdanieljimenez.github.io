@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="author" content="Daniel Jimenez C">
+		<meta name="keywords" content="diversion, juego, niños, adultos, MOKEPON!">
+		<meta name="description" content="Las mejores batallas al alcance de tu mano, MOKEPON!">
+
+			<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="estilo/estilo.css">
+			<script type="text/javascript" src="js/prefixfree.min.js"></script>
+
+				<title>MOKEPON!</title>	
+			<script src="./js/mokepon.js"></script>
+	</head>
+		<body>
+
+		<header>
+			<div class="logo">
+				<img src="img/elementos.png" alt="MOKEPON!" title="MOKEPON!">
+				<h1>MOKEPON! 🔥 💧 🌱</h1>
+			</div>
+		</header>
+
+		<!-- reglas -->
+
+			<div class="reglas" id="reglamento">
+				<h2>Introducción</h2>
+					
+					<p>¡Bienvenido al emocionante mundo de <strong>"MOKEPON"!</strong> En este juego, te encontrarás inmerso en un enfrentamiento épico entre tres elementos fundamentales: el fuego, el agua y la tierra.
+						El objetivo es simple: asumir el control de una mascota y uno de los elementos, demuéstranos tus habilidades estratégicas para dominar a tus oponentes. Cada elemento tiene sus propias fortalezas y debilidades, lo que crea un equilibrio único y desafiante.</p>
+						
+						<h3>Reglas de juego</h3>
+							<ul class="lista">
+								<li>Debes de elegir una mascota y ataque.</li>
+								<li>Solo tienes 3 vidas ten cuidado con tus decisiones.</li>
+								<li>Si los dos contrincantes elegís el mismo ataque es un empate.</li>
+								<li>El FUEGO le gana a la TIERRA, pero pierde contra el AGUA.</li>
+								<li>El AGUA le gana al FUEGO, pero pierde contra la TIERRA.</li>
+								<li>La TIERRA le gana al AGUA, pero pierde contra el FUEGO.</li>
+							</ul>
+			</div>
+
+					
+			<div class="banner" id="banners">
+				<section id="selecionar-mascotas">
+					
+					<h2>Elige tu mascota:</h2>
+
+						<label for="hipodoge">
+						<input type="radio" name="mascota" id="hipodoge"/>Hipodoge</label>
+
+						<label for="capipego">
+						<input type="radio" name="mascota" id="capipego"/>Capipego</label>
+
+						<label for="ratigueya">
+						<input type="radio" name="mascota" id="ratigueya"/>Ratigueya</label>
+
+						<label for="langostelvis">
+						<input type="radio" name="mascota" id="langostelvis"/>Langostelvis</label>
+
+						<label for="tucapalma">
+						<input type="radio" name="mascota" id="tucapalma"/>Tucapalma</label>
+
+						<label for="pydos">
+						<input type="radio" name="mascota" id="pydos"/>Pydos</label>
+
+						
+
+					<!-- Hipodoge -> Agua
+					Capipego -> Tierra
+					Ratigueya -> Fuego 
+					Langostelvis -> Agua y Fuego
+					Tucapalma -> Agua y tierra
+					Pydos -> Tierra y fuego -->
+
+						<div class="boton">
+							<button id="boton-mascota">Seleccionar</button>
+
+						</div>		
+
+				</section>
+			</div>
+			<div class="ataque" id="ataques">
+				<section id="selecionar-ataque">
+					<h2>Selecionar ataque:</h2>
+
+					<p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+					<p>La mascota del enemigo <span id="mascota-enemigo"></span> tiene <span id="vidas-enemigo">3</span> vídas</p>
+			
+			<div class="batalla">	
+					<p>
+							<button id="boton-fuego" disabled>Fuego 🔥</button>
+							<button id="boton-agua" disabled>Agua 💧</button>
+							<button id="boton-tierra" disabled>Tierra 🌱</button>
+					</p>
+			</div>	
+				</section>
+			</div>
+
+			<div class="mensaje" id="mensaj">
+				<section id="mensajes">
+					<!-- <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - Ganaste 🥳</p> -->
+				</section>
+			</div>
+		<footer> 
+			<div class="reinicio">
+				<section id="reiniciar">
+					<button id="boton-reiniciar">Reiniciar</button>
+				</section>
+			</div>
+				<div class="bottom-footer">
+					<p>&copy; Derechos reservados.</p>
+				</div>
+		</footer>
+		</body>
+</html>
